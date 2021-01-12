@@ -7,11 +7,12 @@ document.addEventListener('DOMContentLoaded' , function() {
         const list = document.getElementById(stuId)
         const li = document.createElement('li')
 
-        let grade = document.createElement('span')
-        grade = document.getElementById('input-number')
+        let grade = document.createElement('div')
+        grade = document.getElementById('Se1')
         let g = grade.options[grade.selectedIndex].text
         let subjectID = document.createElement('span')
         subjectID = document.querySelector('#input-number').value
+        grade.innerText(subjectID.querySelector('#input-number').value)
         li.append(g)
         li.append(subjectID)
         list.append(li)
